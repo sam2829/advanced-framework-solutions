@@ -15,6 +15,26 @@
   align-items: center;
   min-height: 136px;
   border-radius: 5px;
+  border: 2px solid #0b2c52;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+
+.LogoLink {
+  display: flex;
+  align-items: center;
+}
+
+.Logo {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Styles for screen sizes larger than 576px wide */
+@media (min-width: 576px) {
+  .Logo {
+    height: 160px;
+  }
 }
