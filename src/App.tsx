@@ -4,10 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import NavBar from "./components/NavBar";
 import { Route, Routes } from "react-router-dom";
-import Homepage from "./pages/homepage/homepage";
-import ServicesPage from "./pages/servicesPage/servicesPage";
-import AboutPage from "./pages/aboutPage/aboutPage";
-import ContactPage from "./pages/contactPage/contactPage";
+import Homepage from "./pages/homepage/homepage.tsx";
+import ServicesPage from "./pages/servicesPage/servicesPage.tsx";
+import AboutPage from "./pages/aboutPage/aboutPage.tsx";
+import ContactPage from "./pages/contactPage/contactPage.tsx";
 
 function App() {
   return (
@@ -22,8 +22,6 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
-
-        <p>Hugh's big important website...... tada!</p>
       </div>
     </>
   );
