@@ -1,0 +1,44 @@
+/* nav link */
+.NavLink {
+  font-size: 16px;
+  color: #0b2c52;
+  font-weight: 600;
+  margin: 5px 2px;
+  padding: 10px 8px;
+  text-decoration: none;
+}
+
+.NavLink:hover {
+  color: #49b2e8;
+}
+
+.NavLinkContact {
+  color: #49b2e8;
+  background-color: #0b2c52;
+  border: 1px solid #49b2e8;
+  border-radius: 8px;
+}
+
+.NavLinkContact:hover {
+  color: #0b2c52;
+  background-color: #49b2e8;
+}
+
+.Active {
+  color: #49b2e8;
+}
+
+.NavLinkContactActive {
+  color: #0b2c52;
+  background-color: #49b2e8;
+  border-color: #0b2c52;
+}
+
+/* Styles for screen sizes larger than 992px wide */
+@media (min-width: 992px) {
+  /* nav link */
+  .NavLink {
+    margin-left: 70px;
+    font-size: 18px;
+  }
+}

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "../styles/NavBar.module.css";
 
 import logo from "../logo/logo-1.jpg";
@@ -6,6 +7,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 import useClickOutsideToggle from "../hooks/useClickOutsideToggle.tsx";
+import NavBarNavLink from "./NavBarNavLink.tsx";
 
 // component to render Navbar
 const NavBar = () => {
@@ -23,13 +25,13 @@ const NavBar = () => {
         fixed="top"
       >
         <Container fluid>
-          <Navbar.Brand className={`px-4 ${styles.Logo}`}>
+          <Navbar.Brand className={` ${styles.Logo}`}>
             {/* Navbar Logo */}
-            <Nav.Link>
+            <Link to="/">
               <div className={styles.LogoLink}>
                 <img src={logo} alt="Company Logo" className={styles.Logo} />
               </div>
-            </Nav.Link>
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle
             ref={ref}
@@ -39,10 +41,18 @@ const NavBar = () => {
           ></Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className={`ms-auto ${styles.NavLinks}`}>
-              {/** Nav Links in Navbar */}
-              <Nav.Link>Services</Nav.Link>
-              <Nav.Link>About</Nav.Link>
-              <Nav.Link>Contact Us</Nav.Link>
+              {/** Import Nav Links in Navbar */}
+              <NavBarNavLink
+                title="Services"
+                to="/services"
+                contactUsLink={false}
+              />
+              <NavBarNavLink title="About" to="/about" contactUsLink={false} />
+              <NavBarNavLink
+                title="Contact Us"
+                to="/contact"
+                contactUsLink={true}
+              />
             </Nav>
           </Navbar.Collapse>
         </Container>
