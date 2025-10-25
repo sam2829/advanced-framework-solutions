@@ -1,20 +1,32 @@
+import { Container } from "react-bootstrap";
 import styles from "../../styles/Homepage.module.css";
+import HomepageHeroImage from "./HomepageHeroImage";
 
-import image from "../../images/image-3.jpg";
-
+// component to render homepage
 const Homepage = () => {
   return (
-    <div className={styles.ImageContainer}>
-      <img
-        src={image}
-        alt="Hughs big valleys bridge"
-        className={styles.Image}
-      />
-      <div className={styles.Overlay}></div>
-      <div className={styles.OverlayText}>
-        <h1>Hugh's Big Super Special Job & Website</h1>
-      </div>
-    </div>
+    <>
+      {/* import hero image section */}
+      <HomepageHeroImage />
+      {/* main section */}
+      <main>
+        <Container>
+          <h2>Services</h2>
+          <p>
+            With years of experience in concrete and structural framework, we
+            provide safe, efficient, and cost-effective solutions for buildings,
+            bridges, and large-scale infastructure projects. We work closely
+            with architects, contractors, and clients to ensure each design is
+            delivered with precision and reliability.
+          </p>
+          <p>
+            My Services include full structural formwork design, load and stress
+            calculations, and project consulting tailored to your specific
+            needs.
+          </p>
+        </Container>
+      </main>
+    </>
   );
 };
 
