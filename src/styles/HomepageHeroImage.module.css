@@ -5,6 +5,7 @@
   height: 700px;
   width: 100%;
   overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .Image {
@@ -38,6 +39,8 @@
 
 .ImageText {
   font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 70px;
 }
 
 /* Styles for screen sizes larger than 992px wide */

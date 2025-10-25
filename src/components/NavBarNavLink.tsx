@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 
 import styles from "../styles/NavBarNavLink.module.css";
 
+// Navlink component props
 interface NavLinkProps {
   title: string;
   to: string;
