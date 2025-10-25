@@ -1,0 +1,89 @@
+.Footer {
+  color: white;
+  background-color: #0b2c52;
+  padding: 40px 0;
+}
+
+.Heading {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.Text {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.Logo {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  padding: 0;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.FooterLink {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+
+.FooterLink:hover {
+  color: #49b2e8;
+}
+
+.FooterLink:active,
+.FooterLink:focus {
+  color: #49b2e8;
+}
+
+.IconContainer {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.Icon a {
+  color: white;
+  font-size: 22px;
+}
+
+.Icon a:hover {
+  color: #49b2e8;
+}
+
+/* Styles for screen sizes larger than 992px wide */
+@media (min-width: 992px) {
+  .Heading {
+    font-size: 26px;
+  }
+
+  .Text {
+    font-size: 17px;
+  }
+  .FooterLinkContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .FooterLink {
+    font-size: 17px;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+  }
+
+  .Logo {
+    height: 130px;
+  }
+
+  .Icon a {
+    font-size: 28px;
+  }
+}

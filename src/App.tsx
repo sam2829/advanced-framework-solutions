@@ -8,6 +8,7 @@ import Homepage from "./pages/homepage/homepage.tsx";
 import ServicesPage from "./pages/servicesPage/servicesPage.tsx";
 import AboutPage from "./pages/aboutPage/aboutPage.tsx";
 import ContactPage from "./pages/contactPage/contactPage.tsx";
+import Footer from "./components/Footer.tsx";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
+        {/* import footer */}
+        <Footer />
       </div>
     </>
   );
