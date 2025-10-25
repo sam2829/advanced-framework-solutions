@@ -11,6 +11,10 @@
   margin-top: 20px;
 }
 
+.TextBold {
+  font-weight: 600;
+}
+
 /* Styles for screen sizes larger than 992px wide */
 @media (min-width: 992px) {
   .SubHeading {
@@ -21,5 +25,9 @@
 
   .Text {
     font-size: 20px;
+  }
+
+  .ButtonContainer {
+    margin: 0 230px;
   }
 }

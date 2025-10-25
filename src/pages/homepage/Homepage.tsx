@@ -1,6 +1,8 @@
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/Homepage.module.css";
 import HomepageHeroImage from "./HomepageHeroImage";
+import HomepageServices from "./HomepageServices";
+import HomepageButtonLayout from "./HomepageButtonLayout";
 
 // component to render homepage
 const Homepage = () => {
@@ -24,6 +26,24 @@ const Homepage = () => {
             calculations, and project consulting tailored to your specific
             needs.
           </p>
+          {/* services example section */}
+          <HomepageServices />
+          <p className={`${styles.Text} ${styles.TextBold}`}>
+            Discover our full range of services or get in touch.
+          </p>
+          {/* import button layout for custom buttons */}
+          <Row className={`my-4 ${styles.ButtonContainer}`}>
+            <HomepageButtonLayout
+              link="/contact"
+              btnTitle="Get In Touch"
+              btnStyle="DBlue"
+            />
+            <HomepageButtonLayout
+              link="/services"
+              btnTitle="View Services"
+              btnStyle="LBlue"
+            />
+          </Row>
         </Container>
       </main>
     </>
