@@ -1,8 +1,6 @@
 import styles from "../../styles/HomepageHeroImage.module.css";
 import image from "../../images/image-3.jpg";
-import { Col, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import CustomButton from "../../components/CustomButton";
+import { Row } from "react-bootstrap";
 import HomepageButtonLayout from "./HomepageButtonLayout";
 
 // component to render homepage hero image section
