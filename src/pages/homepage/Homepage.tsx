@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import styles from "../../styles/Homepage.module.css";
 import HomepageHeroImage from "./HomepageHeroImage";
 import HomepageServices from "./HomepageServices";
