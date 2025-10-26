@@ -1,3 +1,32 @@
-.div {
-    padding-top: 300px;
+.MainContainer {
+  padding-top: 200px;
+}
+
+.Header {
+  margin-top: 50px;
+  color: #0b2c52;
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.Text {
+  color: #0b2c52;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.TextBold {
+  font-weight: 600;
+}
+
+/* Styles for screen sizes larger than 992px wide */
+@media (min-width: 992px) {
+  .Header {
+    font-size: 38px;
+  }
+
+  .Text {
+    font-size: 20px;
+  }
 }
