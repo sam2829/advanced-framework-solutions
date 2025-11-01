@@ -1,0 +1,25 @@
+.FormContainer {
+  margin: 50px 0;
+  padding: 50px 15px;
+  background-color: #0b2c52;
+  border: 2px dashed #49b2e8;
+  border-radius: 8px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.FormHeader {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Styles for screen sizes larger than 576px wide */
+@media (min-width: 576px) {
+  .FormContainer {
+    padding: 50px 30px;
+  }
+}

@@ -1,0 +1,18 @@
+.FormLabel {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.FormInput {
+  color: #0b2c52;
+}
+
+/* Styles for screen sizes larger than 992px wide */
+@media (min-width: 992px) {
+  .FormLabel {
+    text-align: start;
+    margin-right: 100%;
+  }
+}
