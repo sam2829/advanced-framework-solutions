@@ -1,0 +1,13 @@
+.SubHeading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0b2c52;
+  margin-bottom: 15px;
+}
+
+/* Styles for screen sizes larger than 992px wide */
+@media (min-width: 992px) {
+  .SubHeading {
+    font-size: 22px;
+  }
+}

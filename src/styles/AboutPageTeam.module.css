@@ -1,0 +1,49 @@
+.TeamContainer {
+  margin: 50px 0;
+  padding: 50px 0;
+  background-color: #0b2c52;
+  border: 2px dashed #49b2e8;
+  border-radius: 8px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.SubHeading {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.ImageText {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Image {
+  height: 250px;
+  width: 250px;
+  margin: 20px 0 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(135, 206, 250, 0.5);
+}
+
+/* Styles for screen sizes larger than 992px wide */
+@media (min-width: 992px) {
+  .SubHeading {
+    font-size: 22px;
+  }
+
+  .ImageText {
+    font-size: 20px;
+  }
+
+  .Image {
+    height: 300px;
+    width: 300px;
+  }
+}
