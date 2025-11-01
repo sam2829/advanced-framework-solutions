@@ -42,6 +42,7 @@ const NavBar = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className={`ms-auto ${styles.NavLinks}`}>
               {/** Import Nav Links in Navbar */}
+              <NavBarNavLink title="Home" to="/" contactUsLink={false} />
               <NavBarNavLink
                 title="Services"
                 to="/services"
