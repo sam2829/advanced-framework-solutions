@@ -1,7 +1,8 @@
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/ContactPage.module.css";
 import ContactForm from "../../components/ContactForm";
 
+// component to render contact page
 const ContactPage = () => {
   return (
     <main className={styles.MainContainer}>
@@ -15,6 +16,26 @@ const ContactPage = () => {
         </p>
         {/*import contact form  */}
         <ContactForm />
+        {/* additional text underneath form */}
+        <p className={styles.Text}>
+          You can also get in touch with us directly using the details below.
+        </p>
+        {/* icons for phone number and email */}
+        <Row>
+          <Col xs={12} lg={6}>
+            <p className={`${styles.Text} ${styles.Bold}`}>
+              <i className="fa-solid fa-phone"></i> Telephone Number:
+              07809265874
+            </p>
+          </Col>
+          <Col xs={12} lg={6}>
+            <p className={`${styles.Text} ${styles.Bold}`}>
+              <i className="fa-solid fa-envelope"></i> Email:
+              sexybeast69@hotmail.com
+            </p>
+          </Col>
+        </Row>
+        <p className={styles.Text}>We will respond as quickly as possible.</p>
       </Container>
     </main>
   );

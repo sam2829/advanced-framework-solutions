@@ -17,9 +17,19 @@
   margin-bottom: 20px;
 }
 
+.FormText {
+    color: #49b2e8;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
 /* Styles for screen sizes larger than 576px wide */
 @media (min-width: 576px) {
   .FormContainer {
     padding: 50px 30px;
   }
+
+  .FormText {
+    font-size: 14px;
+}
 }

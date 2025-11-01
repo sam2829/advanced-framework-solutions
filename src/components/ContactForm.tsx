@@ -2,6 +2,7 @@ import { Form, Row, Col } from "react-bootstrap";
 import styles from "../styles/ContactForm.module.css";
 import ContactFormInputFields from "./ContactFormInputFields";
 import { useState } from "react";
+import CustomButton from "./CustomButton";
 
 // interface for emailData
 interface emailData {
@@ -109,6 +110,14 @@ const ContactForm = () => {
             />
           </Col>
         </Row>
+        {/* import custom button for submit */}
+        <div className="mt-4">
+          <CustomButton title="Send" btnStyle="LBlue" />
+          <p className={styles.FormText}>
+            Your details will only be used to respond to your enquiry and will
+            not be stored or shared.
+          </p>
+        </div>
       </Form>
     </div>
   );

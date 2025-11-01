@@ -16,6 +16,10 @@
   margin-bottom: 40px;
 }
 
+.Bold {
+  font-weight: 600;
+}
+
 /* Styles for screen sizes larger than 992px wide */
 @media (min-width: 992px) {
   .Header {
