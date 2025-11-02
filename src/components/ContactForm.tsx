@@ -3,6 +3,7 @@ import styles from "../styles/ContactForm.module.css";
 import ContactFormInputFields from "./ContactFormInputFields";
 import { useState } from "react";
 import CustomButton from "./CustomButton";
+import { sendEmail, type EmailParams } from "../emailService/EmailJSService";
 
 // interface for emailData
 interface emailData {
@@ -26,6 +27,9 @@ const ContactForm = () => {
     message: "",
   });
 
+  // handle state for sending form
+  const [isSending, setIsSending] = useState(false);
+
   //   handle input field changes
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -38,11 +42,45 @@ const ContactForm = () => {
     }));
   };
 
+  // handle form submission
+  const handleSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
+
+    setIsSending(true);
+
+    // put email data into email js format
+    const emailJSFormat: EmailParams = {
+      from_name: emailData.name,
+      company_name: emailData.companyName,
+      from_email: emailData.emailAddress,
+      telephone_number: emailData.telephoneNumber,
+      subject: emailData.subject,
+      message: emailData.message,
+    };
+
+    try {
+      await sendEmail(emailJSFormat);
+      console.log("email has been sent successfully!");
+      setEmailData({
+        name: "",
+        companyName: "",
+        emailAddress: "",
+        telephoneNumber: "",
+        subject: "",
+        message: "",
+      });
+    } catch {
+      console.log("error sending the email this time.");
+    } finally {
+      setIsSending(false);
+    }
+  };
+
   return (
     <div className={styles.FormContainer}>
       <h3 className={styles.FormHeader}>Get In Touch</h3>
       {/* create form */}
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <Row>
           <Col xs={12} lg={6}>
             <ContactFormInputFields
@@ -112,7 +150,7 @@ const ContactForm = () => {
         </Row>
         {/* import custom button for submit */}
         <div className="mt-4">
-          <CustomButton title="Send" btnStyle="LBlue" />
+          <CustomButton title="Send" btnStyle="LBlue" type="submit" />
           <p className={styles.FormText}>
             Your details will only be used to respond to your enquiry and will
             not be stored or shared.

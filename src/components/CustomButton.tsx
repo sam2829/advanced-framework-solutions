@@ -5,12 +5,19 @@ import styles from "../styles/CustomButton.module.css";
 interface CustomButtonProps {
   title: string;
   btnStyle: "LBlue" | "DBlue";
+  type?: "submit";
 }
 
 // component to render custom button
-const CustomButton: React.FC<CustomButtonProps> = ({ title, btnStyle }) => {
+const CustomButton: React.FC<CustomButtonProps> = ({
+  title,
+  btnStyle,
+  type,
+}) => {
   return (
-    <Button className={`${styles.Button} ${styles[btnStyle]}`}>{title}</Button>
+    <Button type={type} className={`${styles.Button} ${styles[btnStyle]}`}>
+      {title}
+    </Button>
   );
 };
 
