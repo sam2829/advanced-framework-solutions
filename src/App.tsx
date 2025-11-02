@@ -9,10 +9,14 @@ import ServicesPage from "./pages/servicesPage/servicesPage.tsx";
 import AboutPage from "./pages/aboutPage/aboutPage.tsx";
 import ContactPage from "./pages/contactPage/contactPage.tsx";
 import Footer from "./components/Footer.tsx";
+import ScrollToTop from "./components/ScrollToTop.tsx";
+
 
 function App() {
   return (
     <>
+      {/* import scroll to top */}
+      <ScrollToTop />
       <div className={styles.App}>
         {/* Import NavBar */}
         <NavBar />
