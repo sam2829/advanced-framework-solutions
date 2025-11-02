@@ -1,4 +1,4 @@
-import { Form, Row, Col } from "react-bootstrap";
+import { Form, Row, Col, Spinner } from "react-bootstrap";
 import styles from "../styles/ContactForm.module.css";
 import ContactFormInputFields from "./ContactFormInputFields";
 import { useState } from "react";
@@ -149,8 +149,16 @@ const ContactForm = () => {
           </Col>
         </Row>
         {/* import custom button for submit */}
-        <div className="mt-4">
-          <CustomButton title="Send" btnStyle="LBlue" type="submit" />
+        <div className="mt-4 py-3">
+          {/* button for submitting form */}
+          {!isSending && (
+            <>
+              <CustomButton title="Send" btnStyle="LBlue" type="submit" />
+            </>
+          )}
+          {/* spinner for when form is trying to send */}
+          {isSending && <Spinner className={styles.Spinner} animation="grow" />}
+
           <p className={styles.FormText}>
             Your details will only be used to respond to your enquiry and will
             not be stored or shared.

@@ -18,9 +18,14 @@
 }
 
 .FormText {
-    color: #49b2e8;
-    font-size: 12px;
-    margin-top: 15px;
+  color: #49b2e8;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.Spinner {
+  color: #49b2e8;
+  margin: 2px;
 }
 
 /* Styles for screen sizes larger than 576px wide */
@@ -31,5 +36,5 @@
 
   .FormText {
     font-size: 14px;
-}
+  }
 }
