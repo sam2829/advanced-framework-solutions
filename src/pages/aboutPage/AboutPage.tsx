@@ -1,40 +1,79 @@
 import { Container, Row } from "react-bootstrap";
 import styles from "../../styles/AboutPage.module.css";
-import AboutPageCompanies from "./AboutPageCompanies";
-import AboutPageTeam from "./AboutPageTeam";
 import HomepageButtonLayout from "../homepage/HomepageButtonLayout";
+import MainSectionDiv from "../../components/MainSectionDiv";
+import SubHeading from "../../components/SubHeading";
 
+// component to render about page
 const AboutPage = () => {
   return (
-    <main className={styles.MainContainer}>
+    // import main section div
+    <MainSectionDiv>
       <Container>
         <h1 className={styles.Header}>About Us</h1>
         <p className={styles.Text}>
-          With over 10 years of experience in formwork and temporary works, we
-          have developed a comprehensive understanding of the industry, covering
-          everything from structural design and planning to on site execution
-          and quality assurance. Our projects have supported some of the most
-          prominant names in construction, spanning complex builds across the UK
-          and Europe. By combining technical precisionwith practical expertise,
-          we deliver innovative, safe, and relative solutions tailored to the
-          demands of each project.
-        </p>
-        {/* import Companies worked for section */}
-        <AboutPageCompanies />
-        {/* import meet the team section */}
-        <AboutPageTeam />
-        {/* additional text underneath team section */}
-        <p className={styles.Text}>
-          With specialist expertise built over more than a decade in the
-          industry, our focus is always on delivering practical, innovative, and
-          reliable solutions that help projects succeed. We'd be delighted to
-          bring this approach to your next development - please explore our full
-          range of services or get in touch to discuss how we can support you.
+          Advanced Formwork Solutions (AFS) is a specialist engineering
+          consultancy providing expert design services in formwork and temporary
+          works. With deep-rooted experience across all building sectors, we
+          deliver technically precise solutions grounded in real-world site
+          conditions and commercial realities.
         </p>
         <p className={styles.Text}>
-          Your project, our expertise - lets make it a success.
+          We partner with contractors to offer fast, dependable, and buildable
+          designs — from early-stage concepts to fully detailed temporary works
+          packages. Our approach is always tailored to our clients’ needs,
+          ensuring practical outcomes that support project success.
         </p>
-        {/* import custom buttons and layout */}
+        <p className={styles.Text}>
+          Whether responding to urgent design requirements or contributing as a
+          collaborative project partner, AFS brings the expertise,
+          professionalism, and customer focus needed to meet the demands of
+          modern construction.
+        </p>
+        {/* import sub heading */}
+        <SubHeading title="Why Choose Us" />
+        {/* reasons for choosing us */}
+        <p className={styles.Text}>
+          At Advanced Formwork Solutions, we understand the pressures of
+          delivering safe, buildable designs on time. Here’s why contractors,
+          designers, and developers trust us:
+        </p>
+        <h5 className={`${styles.SmallHeading} ${styles.Text}`}>
+          Specialist Expertise
+        </h5>
+        <p className={styles.Text}>
+          Deep knowledge of formwork and temporary works across all building
+          sectors — with solutions tailored to real-world site conditions.
+        </p>
+        <h5 className={`${styles.SmallHeading} ${styles.Text}`}>
+          Responsive & Reliable
+        </h5>
+        <p className={styles.Text}>
+          Fast turnaround on urgent design needs, backed by clear communication
+          and dependable service.
+        </p>
+        <h5 className={`${styles.SmallHeading} ${styles.Text}`}>
+          Buildable, Practical Designs
+        </h5>
+        <p className={styles.Text}>
+          We focus on constructability, safety, and efficiency — helping teams
+          deliver with confidence.
+        </p>
+        <h5 className={`${styles.SmallHeading} ${styles.Text}`}>
+          Professional Documentation
+        </h5>
+        <p className={styles.Text}>
+          Clear, polished drawings and calculations that meet industry standards
+          and make approvals smoother.
+        </p>
+        <h5 className={`${styles.SmallHeading} ${styles.Text}`}>
+          Client-Focused Approach
+        </h5>
+        <p className={styles.Text}>
+          We listen, adapt, and collaborate — building long-term relationships
+          through trust and consistency.
+        </p>
+        {/* import customer buttons */}
         <Row className={`my-4 ${styles.ButtonContainer}`}>
           <HomepageButtonLayout
             link="/contact"
@@ -48,7 +87,7 @@ const AboutPage = () => {
           />
         </Row>
       </Container>
-    </main>
+    </MainSectionDiv>
   );
 };
 
