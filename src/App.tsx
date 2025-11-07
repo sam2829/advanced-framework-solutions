@@ -4,13 +4,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import NavBar from "./components/NavBar";
 import { Route, Routes } from "react-router-dom";
-import Homepage from "./pages/homepage/homepage.tsx";
-import ServicesPage from "./pages/servicesPage/servicesPage.tsx";
-import AboutPage from "./pages/aboutPage/aboutPage.tsx";
-import ContactPage from "./pages/contactPage/contactPage.tsx";
+import Homepage from "./pages/homepage/Homepage.tsx";
+import ServicesPage from "./pages/servicesPage/ServicesPage.tsx";
+import AboutPage from "./pages/aboutPage/AboutPage.tsx";
+import ContactPage from "./pages/contactPage/ContactPage.tsx";
 import Footer from "./components/Footer.tsx";
 import ScrollToTop from "./components/ScrollToTop.tsx";
-
 
 function App() {
   return (
