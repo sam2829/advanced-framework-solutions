@@ -1,0 +1,14 @@
+.SubHeading {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+/* Styles for screen sizes larger than 992px wide */
+@media (min-width: 992px) {
+  .SubHeading {
+    font-size: 28px;
+    text-align: left;
+    padding-left: 10px;
+  }
+}

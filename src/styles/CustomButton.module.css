@@ -44,10 +44,18 @@
   border-color: white !important;
 }
 
+.btnLG {
+  min-width: 230px;
+}
+
 /* Styles for screen sizes larger than 992px wide */
 @media (min-width: 992px) {
   .Button {
     font-size: 18px;
     min-width: 135px;
+  }
+
+  .btnLG {
+    min-width: 230px;
   }
 }

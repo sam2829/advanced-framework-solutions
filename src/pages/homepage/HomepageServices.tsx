@@ -8,10 +8,8 @@ const HomepageServices = () => {
   return (
     <Row>
       {homepageData.map((data) => (
-        <Col key={data.id} xs={12} lg={4} className="my-4">
+        <Col key={data.id} xs={12} className="my-4">
           <h3 className={styles.Title}>{data.title}</h3>
-          <img src={data.image} alt={data.alt} className={styles.Image} />
-          <p className={styles.Description}>{data.description}</p>
         </Col>
       ))}
     </Row>
