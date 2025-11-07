@@ -1,0 +1,52 @@
+.HeaderContainer {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  overflow: hidden;
+  color: #0b2c52;
+  border-radius: 8px;
+}
+
+.Overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.6);
+  height: 450px;
+  z-index: 1;
+}
+
+.TitleContent {
+  position: relative;
+  z-index: 2;
+  margin-top: 150px;
+  text-align: left;
+  padding: 0 10px;
+}
+
+/* page title */
+.Title {
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.Text {
+  font-weight: 600;
+  font-size: 18px;
+  /* margin-bottom: 70px; */
+}
+
+/* Styles for screen sizes larger than 992px wide */
+@media (min-width: 992px) {
+  .Title {
+    font-size: 38px;
+  }
+
+  .Text {
+    font-size: 24px;
+  }
+}

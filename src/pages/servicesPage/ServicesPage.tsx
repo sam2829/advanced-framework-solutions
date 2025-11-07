@@ -4,13 +4,17 @@ import Services from "./Services";
 import { Link } from "react-router-dom";
 import CustomButton from "../../components/CustomButton";
 import MainSectionDiv from "../../components/MainSectionDiv";
+import PageTitle from "../../components/PageTitle";
 
 // component to render services page
 const ServicesPage = () => {
   return (
+    <>
+    {/* import page title */}
+    <PageTitle title="Services" />
+    {/* import main ection div */}
     <MainSectionDiv>
-      <Container>
-        <h1 className={styles.Header}>Our Services</h1>
+      <Container className="pt-5">
         <p className={styles.Text}>
           At Advanced Formwork Solutions, we provide specialist engineering
           support across all stages of formwork and temporary works design. Our
@@ -31,6 +35,7 @@ const ServicesPage = () => {
         </Link>
       </Container>
     </MainSectionDiv>
+    </>
   );
 };
 

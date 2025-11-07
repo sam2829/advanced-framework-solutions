@@ -8,12 +8,23 @@ import Navbar from "react-bootstrap/Navbar";
 
 import useClickOutsideToggle from "../hooks/useClickOutsideToggle.tsx";
 import NavBarNavLink from "./NavBarNavLink.tsx";
+import { useEffect, useState } from "react";
 
 // component to render Navbar
 const NavBar = () => {
   // This is so we can toggle the hamburger menu
   const { expanded, setExpanded, ref } =
     useClickOutsideToggle<HTMLButtonElement>();
+
+  // state for if page is scrolled
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div>
       {/* Navbar */}
@@ -23,6 +34,12 @@ const NavBar = () => {
         expand="lg"
         className={styles.NavBar}
         fixed="top"
+        style={{
+          backgroundColor: scrolled
+            ? "rgba(247, 244, 244, 0.95)"
+            : "transparent",
+          transition: "background-color 0.3s ease",
+        }}
       >
         <Container fluid>
           <Navbar.Brand className={` ${styles.Logo}`}>
@@ -39,16 +56,24 @@ const NavBar = () => {
             aria-controls="responsive-navbar-nav"
             className={styles.MenuIcon}
           ></Navbar.Toggle>
-          <Navbar.Collapse id="responsive-navbar-nav">
+          <Navbar.Collapse
+            id="responsive-navbar-nav"
+            style={{
+              backgroundColor: expanded
+                ? "rgba(255, 255, 255, 0.75)"
+                : "transparent",
+              backdropFilter: "blur(2px)",
+            }}
+          >
             <Nav className={`ms-auto ${styles.NavLinks}`}>
               {/** Import Nav Links in Navbar */}
               <NavBarNavLink title="Home" to="/" contactUsLink={false} />
+              <NavBarNavLink title="About" to="/about" contactUsLink={false} />
               <NavBarNavLink
                 title="Services"
                 to="/services"
                 contactUsLink={false}
               />
-              <NavBarNavLink title="About" to="/about" contactUsLink={false} />
               <NavBarNavLink
                 title="Contact Us"
                 to="/contact"

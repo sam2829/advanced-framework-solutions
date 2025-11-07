@@ -1,11 +1,8 @@
 /* Navbar */
 .NavBar {
-  background-color: #ffffff;
   display: flex;
   align-items: center;
   min-height: 136px;
-  border-radius: 5px;
-  border: 2px solid #0b2c52;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -29,6 +26,7 @@
   margin-right: 3px;
   color: #0b2c52;
   border: 2px solid #0b2c52;
+  margin-right: 15px;
 }
 
 .MenuIcon:active {
@@ -39,6 +37,7 @@
 .NavLinks {
   display: flex;
   align-items: flex-end;
+  padding-right: 15px;
 }
 
 /* Styles for screen sizes larger than 576px wide */

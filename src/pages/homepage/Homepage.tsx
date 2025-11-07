@@ -6,11 +6,17 @@ import MainSectionDiv from "../../components/MainSectionDiv";
 import SubHeading from "../../components/SubHeading";
 import CustomButton from "../../components/CustomButton";
 import { Link } from "react-router-dom";
+import PageTitle from "../../components/PageTitle";
 
 // component to render homepage
 const Homepage = () => {
   return (
     <>
+      {/* import page title */}
+      <PageTitle
+        title="Advanced Formwork Solutions"
+        subtitle="Your partner for all Formwork and Temporary Works Designs"
+      />
       {/* Import main section */}
       <MainSectionDiv>
         <Container>
@@ -52,7 +58,7 @@ const Homepage = () => {
             Discover our full range of services or get in touch.
           </p>
           {/* import custom button */}
-          <Row className={`my-4 ${styles.ButtonContainer}`}>
+          <Row className={`my-5 ${styles.ButtonContainer}`}>
             <Link to="/services">
               <CustomButton
                 title="More About Our Services"
