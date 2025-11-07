@@ -1,11 +1,13 @@
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/ContactPage.module.css";
 import ContactForm from "../../components/ContactForm";
+import MainSectionDiv from "../../components/MainSectionDiv";
 
 // component to render contact page
 const ContactPage = () => {
   return (
-    <main className={styles.MainContainer}>
+    // import Main div
+    <MainSectionDiv>
       <Container>
         <h1 className={styles.Header}>Contact Us</h1>
         <p className={styles.Text}>
@@ -37,7 +39,7 @@ const ContactPage = () => {
         </Row>
         <p className={styles.Text}>We will respond as quickly as possible.</p>
       </Container>
-    </main>
+    </MainSectionDiv>
   );
 };
 

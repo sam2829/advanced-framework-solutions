@@ -1,17 +1,11 @@
-.MainContainer {
-  padding-top: 200px;
-}
-
 .Header {
   margin-top: 50px;
-  color: #0b2c52;
   font-weight: 600;
   font-size: 26px;
   margin-bottom: 30px;
 }
 
 .Text {
-  color: #0b2c52;
   font-size: 16px;
   margin-bottom: 40px;
 }

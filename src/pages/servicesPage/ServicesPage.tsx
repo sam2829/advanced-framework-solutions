@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import CustomButton from "../../components/CustomButton";
 import MainSectionDiv from "../../components/MainSectionDiv";
 
+// component to render services page
 const ServicesPage = () => {
   return (
     <MainSectionDiv>

@@ -1,5 +1,6 @@
 import styles from "../../styles/ServicesText.module.css";
 
+// props
 interface ServiceTextProps {
   title: string;
   description: string;

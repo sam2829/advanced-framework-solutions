@@ -1,8 +1,8 @@
 .FormContainer {
   margin: 50px 0;
   padding: 50px 15px;
-  background-color: #0b2c52;
-  border: 2px dashed #49b2e8;
+  /* background-color: #0b2c52; */
+  /* border: 2px dashed #49b2e8; */
   border-radius: 8px;
   justify-content: center;
   text-align: center;
@@ -11,14 +11,13 @@
 }
 
 .FormHeader {
-  color: white;
+  color: #0b2c52;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 .FormText {
-  color: #49b2e8;
   font-size: 12px;
   margin-top: 15px;
 }

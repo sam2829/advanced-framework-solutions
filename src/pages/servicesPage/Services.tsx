@@ -2,6 +2,7 @@ import { Row, Col } from "react-bootstrap";
 import { ServicesData } from "./ServicesPageData";
 import ServicesText from "./ServicesText";
 
+// component to map over services
 const Services = () => {
   return (
     <Row>
