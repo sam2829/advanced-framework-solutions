@@ -3,23 +3,24 @@ import styles from "../../styles/ServicesPage.module.css";
 import Services from "./Services";
 import { Link } from "react-router-dom";
 import CustomButton from "../../components/CustomButton";
+import MainSectionDiv from "../../components/MainSectionDiv";
 
 const ServicesPage = () => {
   return (
-    <main className={styles.MainContainer}>
+    <MainSectionDiv>
       <Container>
         <h1 className={styles.Header}>Our Services</h1>
         <p className={styles.Text}>
-          With over 10 years of experience in formwork and temporary works
-          engineering. We have delivered major projects across the UK and
-          Europe. Our focus is on precision, safety, and efficient solutions for
-          complex structures.
+          At Advanced Formwork Solutions, we provide specialist engineering
+          support across all stages of formwork and temporary works design. Our
+          services include:
         </p>
         {/* import list of services */}
         <Services />
-        <p className={`${styles.Text} ${styles.TextBold}`}>
-          Looking for reliable formwork solutions or expert temporary
-          worksadvice? Contact us todayto discuss your project.
+        <p className={styles.Text}>
+          For any other temporary works requirements, we’re happy to discuss
+          bespoke solutions tailored to your project. Please don’t hesitate to
+          get in touch.
         </p>
         {/* import custom button */}
         <Link to="/contact">
@@ -28,7 +29,7 @@ const ServicesPage = () => {
           </div>
         </Link>
       </Container>
-    </main>
+    </MainSectionDiv>
   );
 };
 

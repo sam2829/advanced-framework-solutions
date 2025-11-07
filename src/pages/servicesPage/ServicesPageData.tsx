@@ -1,51 +1,63 @@
-import image1 from "../../images/image-1.png";
-import image2 from "../../images/image-2.jpg";
-import image3 from "../../images/image-3.jpg";
-import image4 from "../../images/image-4.jpg";
-
 export const ServicesData = [
   {
     id: 1,
-    title: "Structural Formwork Solutions",
-    image: image1,
-    alt: "Heads of the valley bridge",
-    bulletPoints: [
-      "Concrete walls, slabs",
-      "Bridge formwork systems",
-      "Custom / complex shapes",
-    ],
+    title: "Formwork Systems",
+    description: "Traditional, proprietary, and bespoke designs.",
   },
   {
     id: 2,
-    title: "Temporary Works Engineering",
-    image: image2,
-    alt: "Calculations",
-    bulletPoints: [
-      "Shoring and propping",
-      "Safety analysis",
-      "Load-bearing calculations",
-    ],
+    title: "Structural Support Systems",
+    description: "Propping, needling, back propping, and façade retention.",
   },
   {
     id: 3,
-    title: "Consultancy & Project Support",
-    image: image3,
-    alt: "working hard",
-    bulletPoints: [
-      "Site planning and coordination",
-      "Coolaboration with architects and contractors",
-      "Risk assessments",
-    ],
+    title: "Falsework & Back Propping",
+    description: "Traditional and monolithic systems.",
   },
   {
     id: 4,
-    title: "Safety & Compliance",
-    image: image4,
-    alt: "Safety planning",
-    bulletPoints: [
-      "Structural risk assessments for temporary works",
-      "Site safety audits",
-      "Compliance with local regulations and Eurocodes",
-    ],
+    title: "Modular Scaffolding",
+    description: "Design and integration of modular scaffold systems.",
+  },
+  {
+    id: 5,
+    title: "Climbing Formworkng",
+    description: "Climbing systems for vertical structures.",
+  },
+  {
+    id: 6,
+    title: "Hoarding Solutions",
+    description: "Secure and compliant site perimeter designs.",
+  },
+  {
+    id: 7,
+    title: "Timber Design",
+    description: "Structural timber solutions for temporary applications.",
+  },
+  {
+    id: 8,
+    title: "Canti-Deck & Loading Platforms",
+    description: "Safe and efficient access and material handling platforms.",
+  },
+  {
+    id: 9,
+    title: "Pad Foundations & Earthworks",
+    description: "Temporary foundation layouts and excavation support.",
+  },
+  {
+    id: 10,
+    title: "Independent Checking",
+    description: "Category 2 and 3 checks.",
+  },
+  {
+    id: 11,
+    title: "Slab Assessments",
+    description:
+      "Structural evaluations for load-bearing capacity and suitability.",
+  },
+  {
+    id: 12,
+    title: "Site Consultations",
+    description: "On-site engineering support.",
   },
 ];
