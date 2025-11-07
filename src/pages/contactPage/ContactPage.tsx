@@ -25,15 +25,15 @@ const ContactPage = () => {
         {/* icons for phone number and email */}
         <Row>
           <Col xs={12} lg={6}>
-            <p className={`${styles.Text} ${styles.Bold}`}>
+            <p className={styles.ContactInfo}>
               <i className="fa-solid fa-phone"></i> Telephone Number:
               07809265874
             </p>
           </Col>
           <Col xs={12} lg={6}>
-            <p className={`${styles.Text} ${styles.Bold}`}>
+            <p className={styles.ContactInfo}>
               <i className="fa-solid fa-envelope"></i> Email:
-              sexybeast69@hotmail.com
+              Info@advancedformworksolutions.com
             </p>
           </Col>
         </Row>

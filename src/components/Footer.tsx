@@ -10,13 +10,15 @@ const Footer = () => {
     <footer className={styles.Footer}>
       <Container>
         <Row>
-            {/* contact details */}
+          {/* contact details */}
           <Col xs={12} lg={5}>
             <h5 className={styles.Heading}>Contact Details</h5>
             <Row>
               <Col xs={12}>
                 <p className={styles.Text}>Telephone Number: 07809265874</p>
-                <p className={styles.Text}>Emal: sexybeast69@hotmail.com</p>
+                <p className={styles.Text}>
+                  Emal: Info@advancedformworksolutions.com
+                </p>
               </Col>
             </Row>
           </Col>
@@ -47,7 +49,7 @@ const Footer = () => {
             <Row className={`${styles.IconContainer} justify-content-center`}>
               <Col xs={2} className={styles.Icon}>
                 <a
-                  href="mailto: samscarisbrick@outlook.com"
+                  href="mailto: Info@advancedformworksolutions.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
