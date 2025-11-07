@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "../styles/NavBar.module.css";
 
-import logo from "../logo/logo-1.jpg";
+import logo from "../logo/hugh-logo.png";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
