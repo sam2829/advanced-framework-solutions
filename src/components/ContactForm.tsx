@@ -46,6 +46,24 @@ const ContactForm = () => {
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
 
+    // contact form validation
+    // trimmed all values for white space
+    const trimmedData = Object.fromEntries(
+      Object.entries(emailData).map(([Key, value]) => [Key, value.trim()])
+    ) as emailData;
+
+    if (Object.values(trimmedData).some((val) => val === "")) {
+      alert("Please fill in all fields before submitting.");
+      return;
+    }
+
+    // Telephone validation
+    const phoneRegex = /^[+]?\d{7,15}$/; // allows +44, etc., 7–15 digits
+    if (!phoneRegex.test(trimmedData.telephoneNumber)) {
+      alert("Please enter a valid telephone number (digits only).");
+      return;
+    }
+
     setIsSending(true);
 
     // put email data into email js format

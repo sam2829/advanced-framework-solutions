@@ -39,7 +39,7 @@ const ContactFormInputFields: React.FC<ContactFormInputFieldsProps> = ({
         as={as}
         min={min}
         maxLength={maxLength}
-        required
+        // required
         className={styles.FormInput}
         {...(as === "textarea" ? { rows } : {})}
       />
