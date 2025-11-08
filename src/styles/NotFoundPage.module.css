@@ -1,0 +1,16 @@
+.Container {
+    margin-top: 250px;
+}
+
+.Text {
+  font-size: 18px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/* Styles for screen sizes larger than 992px wide */
+@media (min-width: 992px) {
+  .Text {
+    font-size: 24px;
+  }
+}

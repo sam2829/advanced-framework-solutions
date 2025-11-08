@@ -10,6 +10,7 @@ import AboutPage from "./pages/aboutPage/AboutPage.tsx";
 import ContactPage from "./pages/contactPage/ContactPage.tsx";
 import Footer from "./components/Footer.tsx";
 import ScrollToTop from "./components/ScrollToTop.tsx";
+import NotFoundPage from "./pages/notFoundPage/NotFoundPage.tsx";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
         {/* import footer */}
         <Footer />
