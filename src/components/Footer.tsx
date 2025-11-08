@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import styles from "../styles/Footer.module.css";
 import { Link } from "react-router-dom";
 
-import logo from "../logo/logo-1.jpg";
+import logo from "../logo/hugh-logo.png";
 
 // component to render footer
 const Footer = () => {
