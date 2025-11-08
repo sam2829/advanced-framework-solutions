@@ -33,11 +33,11 @@ const Footer = () => {
               <Link to="/" className={styles.FooterLink}>
                 Home
               </Link>
-              <Link to="/services" className={styles.FooterLink}>
-                Services
-              </Link>
               <Link to="/about" className={styles.FooterLink}>
                 About
+              </Link>
+              <Link to="/services" className={styles.FooterLink}>
+                Services
               </Link>
               <Link to="/contact" className={styles.FooterLink}>
                 Contact Us
