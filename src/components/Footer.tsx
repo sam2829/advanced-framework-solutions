@@ -58,16 +58,7 @@ const Footer = () => {
               </Col>
               <Col xs={2} className={styles.Icon}>
                 <a
-                  href="https://www.facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fa-brands fa-facebook-f"></i>
-                </a>
-              </Col>
-              <Col xs={2} className={styles.Icon}>
-                <a
-                  href="https://www.linkedin.com "
+                  href="https://www.linkedin.com/company/advanced-formwork-solutions/ "
                   target="_blank"
                   rel="noopener noreferrer"
                 >

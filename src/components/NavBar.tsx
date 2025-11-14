@@ -48,7 +48,7 @@ const NavBar = () => {
               <div className={styles.LogoLink}>
                 <img
                   src={logo}
-                  alt="Company Logo Advanced Framework Solutions Ltd"
+                  alt="Company Logo Advanced Formwork Solutions Ltd"
                   className={styles.Logo}
                 />
               </div>
