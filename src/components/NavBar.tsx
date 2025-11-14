@@ -46,7 +46,11 @@ const NavBar = () => {
             {/* Navbar Logo */}
             <Link to="/">
               <div className={styles.LogoLink}>
-                <img src={logo} alt="Company Logo" className={styles.Logo} />
+                <img
+                  src={logo}
+                  alt="Company Logo Advanced Framework Solutions Ltd"
+                  className={styles.Logo}
+                />
               </div>
             </Link>
           </Navbar.Brand>
